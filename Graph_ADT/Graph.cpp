@@ -89,10 +89,6 @@ void Graph::removeEdge(int x, int y)
 //get_edge_value(G, x, y) : returns the value associated to the edge(x, y).
 int Graph::getEdgeValue(int x, int y) const
 {
-	/*
-	needs to be tested. via debugger and valgrind
-	*/
-
 	if (adjList[x].inList(y))
 	{
 		Node *current = adjList[x].getFirst();
